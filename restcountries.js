@@ -48,7 +48,7 @@ var weather=function(data){
     var idvalue=document.getElementById(data).innerHTML;
     var actualvalue=idvalue.length;
     actualvalue=idvalue.slice(9,actualvalue);
-    fetch("http://api.openweathermap.org/data/2.5/weather?q="+actualvalue+"&appid=87537b8fd879289d8397daabde83d6a3")
+    fetch("https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q="+actualvalue+"&appid=87537b8fd879289d8397daabde83d6a3")
     .then(function(result)
     {
         return result.json();
