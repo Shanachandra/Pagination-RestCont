@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    .fhead{
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+    .imgsize{
+    
+width: 310px;
+height: 200px;
+    }
+    .alltext{
+        text-align: center;
+        color: white;
+        margin-top: 20px;
+    }
+    .some{
+        background: rgb(190,186,115);
+background: linear-gradient(90deg, rgba(190,186,115,0.9643207624846813) 12%, rgba(44,51,31,0.9643207624846813) 94%, rgba(112,125,119,1) 100%);
+    }
+  .btn-primary{
+      background-color: transparent;
+      color: white;
+      border-color: white;
+  }
+  .cardin{
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+</style>
+
+    </head>
+    <body>
+
+        <!-- <script>
+            var firstdiv=document.createElement("div");
+            firstdiv.setAttribute("class","container")
+            firstdiv.setAttribute("style","margin-top: 50px;")
+            var infirstdiv=document.createElement("div");
+            infirstdiv.setAttribute("class","row")
+            infirstdiv.setAttribute("style","background-color: gray;")
+            var insecdiv=document.createElement("div")
+            insecdiv.setAttribute("Class","col-4 cardin")
+            var inthidiv=document.createElement("div")
+            inthidiv.setAttribute("class","card some")
+            var h51=document.createElement("h5")
+            h51.setAttribute("class","card-header fhead")
+            h51.setAttribute("id","fh")
+            inthidiv.appendChild(h51)
+            var bodydivf=document.createElement("div")
+            bodydivf.setAttribute("class","card-body allbody")
+            var bodydivimg=document.createElement("img")
+            bodydivimg.setAttribute("src","https://restcountries.eu/data/afg.svg")
+            bodydivimg.setAttribute("class","imgsize")
+            bodydivimg.setAttribute("id","fimg")
+            bodydivf.appendChild(bodydivimg)
+            var innerdiv=document.createElement("div")
+            innerdiv.setAttribute("class","alltext")
+            var p1=document.createElement("p")
+            p1.setAttribute("class","card-text")
+            p1.setAttribute("id","fcapital")
+            innerdiv.appendChild(p1)
+            var p2=document.createElement("p")
+            p2.setAttribute("class","card-text")
+            p2.setAttribute("id","fregion")
+            innerdiv.appendChild(p2)
+            var p3=document.createElement("p")
+            p3.setAttribute("class","card-text")
+            p3.setAttribute("id","fcode")
+            innerdiv.appendChild(p3)
+            var a1=document.createElement("a")
+            a1.setAttribute("class","btn btn-primary")
+            a1.setAttribute("onclick","weather('fcapital')")
+            a1.innerHTML="Click for Weather"
+            innerdiv.appendChild(a1)
+            bodydivf.appendChild(innerdiv)
+            inthidiv.appendChild(bodydivf)
+            insecdiv.appendChild(inthidiv)
+            infirstdiv.appendChild(insecdiv)
+            firstdiv.appendChild(infirstdiv)
+            document.body.appendChild(firstdiv)
+
+
+
+
+            var intersecdiv=document.createElement("div")
+            intersecdiv.setAttribute("Class","col-4 cardin")
+            var inthidiv2=document.createElement("div")
+            inthidiv2.setAttribute("class","card some")
+            var h52=document.createElement("h5")
+            h52.setAttribute("class","card-header fhead")
+            h52.setAttribute("id","sh")
+            inthidiv2.appendChild(h52)
+            var bodydivs=document.createElement("div")
+            bodydivs.setAttribute("class","card-body allbody")
+            var bodydivimgs=document.createElement("img")
+            bodydivimgs.setAttribute("src","https://restcountries.eu/data/afg.svg")
+            bodydivimgs.setAttribute("class","imgsize")
+            bodydivimgs.setAttribute("id","simg")
+            bodydivs.appendChild(bodydivimgs)
+            var innerdivs=document.createElement("div")
+            innerdivs.setAttribute("class","alltext")
+            var p1s=document.createElement("p")
+            p1s.setAttribute("class","card-text")
+            p1s.setAttribute("id","scapital")
+            innerdivs.appendChild(p1s)
+            var p2s=document.createElement("p")
+            p2s.setAttribute("class","card-text")
+            p2s.setAttribute("id","sregion")
+            innerdivs.appendChild(p2s)
+            var p3s=document.createElement("p")
+            p3s.setAttribute("class","card-text")
+            p3s.setAttribute("id","scode")
+            innerdivs.appendChild(p3s)
+            var a2=document.createElement("a")
+            a2.setAttribute("class","btn btn-primary")
+            a2.setAttribute("onclick","weather('scapital')")
+            a2.innerHTML="Click for Weather"
+            innerdivs.appendChild(a2)
+            bodydivs.appendChild(innerdivs)
+            inthidiv2.appendChild(bodydivf)
+            intersecdiv.appendChild(inthidiv2) 
+            infirstdiv.appendChild(intersecdiv)
+            firstdiv.appendChild(infirstdiv)
+            
+        </script> -->
+        
+        <div class="container" style="margin-top: 50px;">
+            <div class="row" style="background-color: gray;">
+                <div class="col-4 cardin">
+                    <div class="card some">
+                        <h5 class="card-header fhead" id="fh"></h5>
+                        <div class="card-body allbody">
+                            <img  class="imgsize" id="fimg">
+                 
+                            <div class="alltext">
+                                <p class="card-text" id="fcapital"> </p>
+                                <p class="card-text" id="fregion"> </p>
+                                <p class="card-text" id="fcode"> </p>
+                                <a class="btn btn-primary" onclick="weather('fcapital')">Click for weather</a>
+
+                            </div>
+                   
+    
+                                                </div>
+                    </div>
+              
+
+                </div>
+                <div class="col-4 cardin">
+                    <div class="card some">
+                        <h5 class="card-header fhead" id="sh"></h5>
+                        <div class="card-body allbody">
+                            <img class="imgsize" id="simg">
+                            <div class="alltext">
+                                <p class="card-text" id="scapital"> </p>
+                                <p class="card-text" id="sregion"> </p>
+                                <p class="card-text" id="scode"> </p>
+                                
+                                <a class="btn btn-primary" onclick="weather('scapital')">Click for weather</a>
+
+                            </div>
+    
+                                                </div>
+                    </div>
+              
+
+                </div>
+                <div class="col-4 cardin">
+                    <div class="card some">
+                        <h5 class="card-header fhead" id="th"></h5>
+                        <div class="card-body allbody">
+                            <img class="imgsize" id="timg">
+                            <div class="alltext">
+                                <p class="card-text" id="tcapital"></p>
+                                <p class="card-text" id="tregion"></p>
+                                <p class="card-text" id="tcode"> </p>
+                                
+                                <a class="btn btn-primary" onclick="weather('tcapital')">Click for weather</a>
+
+                            </div>
+    
+                                                </div>
+                    </div>
+              
+
+                </div>
+                </div>
+                </div>
+                
+
+                <div class="container" style="margin-top: 20px;">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        
+                        <div class="col-6">
+                            <div class="card"> </div>
+                            <h3 class="card-header" id="newhead"> </h3>
+                            <div class="card-body">
+                                <p id="desc"> </p>
+                                <p id="icon"> </p>
+                                <p id="ident"> </p>
+                                <p id="main"> </p>
+
+                            </div>
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+
+                </div>
+          
+        <script src="restcountries.js"></script>
+       <!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
